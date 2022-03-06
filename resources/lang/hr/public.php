@@ -16,16 +16,19 @@ return [
     'Vehicle Type' => 'Tipovi vozila',
     'Vehicle' => 'Tablice',
     'Kilometer Ran' => 'pređenih km',
-    'Fuel Cose' => 'Cijena goriva',
+    'Fuel Cost' => 'Cijena goriva',
     'Fuel Bill Image' => 'Slika računa za gorivo',
     'Any Damage' => 'Da li postoji kvar?',
     'Damage image' => 'Slika kvara',
     'Porto Montenegro Records' => 'Porto Montenegro podaci',
     'Record Listing' => 'Lista unetih podataka',
-    'Enter Record' => 'Unesite objavu'
-
-    
-    
-    
+    'Enter Record' => 'Unesite objavu',
+    'Select Vehicle' => 'Izaberite vozilo',
+    'Choose file' => 'Izaberite fajl',
+    'Post Record' => 'Unesite objavu',
+    'Yes'=>'Da',
+    'No'=>'Ne',
+    'Thank you for posting' => 'hvala ti za post',
+    'Home'=>'Sadržaj',
 ];
 ?>

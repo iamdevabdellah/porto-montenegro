@@ -3,7 +3,7 @@ return [
     'Welcome' => 'Welcome',
     'See Records' => 'See Records',
     'Search Records' => 'Search Records',
-    'Dashboard' => 'SDashboardadržaj',
+    'Dashboard' => 'Dashboard',
     'Lists' => 'Lists',
     'Search' => 'Search',
     'Logout' => 'Logout',
@@ -22,10 +22,14 @@ return [
     'Damage image' => 'Damage image',
     'Porto Montenegro Records' => 'Porto Montenegro Records',
     'Record Listing' => 'Record Listing',
-    'Enter Record' => 'Enter Record'
-
-    
-    
-    
+    'Enter Record' => 'Enter Record',
+    'Select Vehicle' => 'Select Vehicle',
+    'Choose file' => 'Choose file',
+    'Post Record' => 'Post Record',
+    'Yes'=>'Yes',
+    'No'=>'No',
+    'No'=>'No',
+    'Thank you for posting' => 'Thank you for posting',
+    'Home'=>'Home',
 ];
 ?>

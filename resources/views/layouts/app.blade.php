@@ -37,13 +37,24 @@
                 <div class="hidden md:flex items-center space-x-1">
                     @auth
                         <a href="{{ route('home') }}"
-                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">Home</a>
+                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">
+                            {{-- Home --}}
+                            @lang('public.Home')
+                        </a>
                         <a href="{{ route('dashboard') }}"
-                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">Dashboard</a>
+                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">
+                            {{-- Dashboard --}}
+                            @lang('public.Dashboard')
+                        </a>
+
                         <a href="{{ route('posts') }}"
-                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">Post
-                            Record</a>
+                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">
+                            {{-- Post Record --}}
+                            @lang('public.Post Record')
+                        </a>
                     @endauth
+                    <a href="locale/en" class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">EN</a>
+                    <a href="locale/hr" class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">HR</a>
 
                     @guest
                         <a href="locale/en" class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">EN</a>
@@ -91,7 +102,12 @@
             @endauth
 
             @guest
-                <a href="{{ route('login') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Login</a>
+                <a href="{{ route('login') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
+
+                    {{-- Login --}}
+                    @lang('public.Login')
+
+                </a>
                 <a href="{{ route('register') }}"
                     class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Signup</a>
             @endguest
@@ -99,8 +115,11 @@
             @auth
                 <form action="{{ route('logout') }}" method="post">
                     @csrf
-                    <button class="block py-2 px-4 text-sm hover:bg-gray-200 w-full text-center"
-                        type="submit">Logout</button>
+                    <button class="block py-2 px-4 text-sm hover:bg-gray-200 w-full text-center" type="submit">
+                        {{-- Logout --}}
+                        @lang('public.Logout')
+
+                    </button>
                 </form>
             @endauth
 

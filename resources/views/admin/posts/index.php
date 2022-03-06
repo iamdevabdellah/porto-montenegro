@@ -20,7 +20,11 @@
         </div>
 
         <div class="mb-4">
-          <label for="distance" class="sr-only">Kilometer Ran</label>
+          <label for="distance" class="sr-only">
+            <!-- Kilometer Ran -->
+            @lang('public.Kilometer Ran')
+
+          </label>
           <input type="text" name="distance" id="distance" placeholder="Kilometer Ran"
             class="br-gray-100 border-2 w-full p-4 rounded-lg @error('distance') border-red-500 @enderror"
             value="{{ old('distance') }}">
