@@ -68,7 +68,11 @@
                         <form action="{{ route('logout') }}" method="post">
                             @csrf
                             <button class="py-2 px-3 bg-blue-900 hover:bg-blue-700 text-white transition duration-300"
-                                type="submit">Logout</button>
+                                type="submit">
+
+                                {{-- Logout --}}
+                                @lang('public.Logout')
+                            </button>
                         </form>
                     @endauth
                 </div>

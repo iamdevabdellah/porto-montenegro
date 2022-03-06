@@ -54,6 +54,7 @@
 
                 <!-- secondary nav -->
                 <div class="hidden md:flex items-center space-x-1">
+
                     <a href="{{ route('admin.dashboard') }}"
                         class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">
                         {{-- Dashboard --}}
@@ -69,6 +70,9 @@
                         {{-- Search --}}
                         @lang('public.Search')
                     </a>
+                    <a href="locale/en" class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">EN</a>
+                    <a href="locale/hr" class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">HR</a>
+
                     @guest
                         <a href="{{ route('login') }}"
                             class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">

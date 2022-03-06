@@ -29,6 +29,7 @@ return [
     'Yes'=>'Da',
     'No'=>'Ne',
     'Thank you for posting' => 'hvala ti za post',
-    'Home'=>'Sadržaj',
+    // 'Home'=> 'Sadržaj',
+    'Admin Dashboard'=> 'Sadržaj',
 ];
 ?>

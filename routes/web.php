@@ -46,4 +46,6 @@ Route::get('/admin/search', [SearchController::class, 'view'])->name('admin.sear
 // localization Route
 
 Route::get("locale/{lange}",[LocalizationController::class,'setLang']);
+Route::get("/admin/locale/{lange}",[LocalizationController::class,'setLang']);
+Route::get("/admin/locale/{lange}",[LocalizationController::class,'setLang']);
 
