@@ -139,7 +139,6 @@
 
                 </a>
                 <a href="{{ route('register') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
-                    Signup
                     {{-- Signup --}}
                     @lang('public.Signup')
                 </a>

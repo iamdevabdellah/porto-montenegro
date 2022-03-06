@@ -59,7 +59,11 @@
                     @guest
 
                         <a href="{{ route('login') }}"
-                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">Login</a>
+                            class="py-5 px-3 text-blue-900 hover:bg-gray-200 hover:text-gray-700">
+                            {{-- Login --}}
+                            @lang('public.Login')</a>
+
+                        </a>
                         <a href="{{ route('register') }}"
                             class="py-2 px-3 bg-blue-900 hover:bg-blue-700 text-white transition duration-300">Signup</a>
                     @endguest
@@ -96,52 +100,62 @@
             {{-- <a href="#" class="block py-2 px-4 text-sm hover:bg-gray-200">Features</a> --}}
 
             @auth
-                <a href="{{ route('home') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Home</a>
-                <a href="{{ route('dashboard') }}"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Dashboard</a>
-                <a href="{{ route('posts') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Post
-                    Record</a>
-            @endauth
-
-            @guest
-                <a href="{{ route('login') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
-
-                    {{-- Login --}}
-                    @lang('public.Login')
-
+                <a href="{{ route('home') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
+                    {{-- Home --}}
+                    @lang('public.Home')</a>
                 </a>
-                <a href="{{ route('register') }}"
-                    class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Signup</a>
-            @endguest
+                <a href="{{ route('dashboard') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
 
-            @auth
-                <form action="{{ route('logout') }}" method="post">
-                    @csrf
-                    <button class="block py-2 px-4 text-sm hover:bg-gray-200 w-full text-center" type="submit">
-                        {{-- Logout --}}
-                        @lang('public.Logout')
-
-                    </button>
-                </form>
+                    {{-- Dashboard --}}
+                    @lang('public.Dashboard')</a>
             @endauth
 
-        </div>
-        <!-- mobile menu end-->
-    </nav>
-    <!-- navbar ends here -->
+            </a>
+            <a href="{{ route('posts') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
 
-    @yield('content')
+                {{-- Post Record --}}
+                @lang('public.Post Record')</a>
+        @endauth
 
-    <script>
-        // grab everything we need
-        const btn = document.querySelector("button.mobile-menu-button");
-        const menu = document.querySelector(".mobile-menu");
+        @guest
+            <a href="{{ route('login') }}" class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">
 
-        // add event listeners
-        btn.addEventListener("click", () => {
-            menu.classList.toggle("hidden");
-        });
-    </script>
+                {{-- Login --}}
+                @lang('public.Login')
+
+            </a>
+            <a href="{{ route('register') }}"
+                class="block py-2 px-4 text-sm hover:bg-gray-200 text-center">Signup</a>
+        @endguest
+
+        @auth
+            <form action="{{ route('logout') }}" method="post">
+                @csrf
+                <button class="block py-2 px-4 text-sm hover:bg-gray-200 w-full text-center" type="submit">
+                    {{-- Logout --}}
+                    @lang('public.Logout')
+
+                </button>
+            </form>
+        @endauth
+
+    </div>
+    <!-- mobile menu end-->
+</nav>
+<!-- navbar ends here -->
+
+@yield('content')
+
+<script>
+    // grab everything we need
+    const btn = document.querySelector("button.mobile-menu-button");
+    const menu = document.querySelector(".mobile-menu");
+
+    // add event listeners
+    btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+    });
+</script>
 
 </body>
 
