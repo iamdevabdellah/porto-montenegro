@@ -19,7 +19,7 @@ return [
     'Fuel Cost' => 'Cijena goriva',
     'Fuel Bill Image' => 'Slika računa za gorivo',
     'Any Damage' => 'Da li postoji kvar?',
-    'Damage image' => 'Slika kvara',
+    'Damage Image' => 'Slika kvara',
     'Porto Montenegro Records' => 'Porto Montenegro podaci',
     'Record Listing' => 'Lista unetih podataka',
     'Enter Record' => 'Unesite objavu',
